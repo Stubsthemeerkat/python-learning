@@ -2,6 +2,7 @@ def pass_check():
     password = input("Welcome to the password check system. Enter your password: ")
     final_score = 5
 
+##Checks each criterion of the password and updates the final score accordingly
     if len(password) >= 16:
         print("Length: Passed")
     else:
@@ -29,6 +30,7 @@ def pass_check():
         final_score -= 1
     print("Final score:", final_score)
 
+##Checks final score of password strength
     if final_score == 5:
         print("Password is very strong")
     elif final_score == 4:
